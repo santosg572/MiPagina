@@ -3,323 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Profesional</title>
+    <title>Mi Grupo</title>
     <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #34495e;
-            --accent: #3498db;
-            --text: #ffffff;
-            --bg: #f4f7f6;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
-            line-height: 1.6;
-            background-color: var(--bg);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
             color: #333;
         }
-
-        header {
-            background: var(--primary);
-            color: var(--text);
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        nav {
+        .grupo-contenedor {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
             justify-content: center;
-            background: var(--secondary);
-            padding: 0.5rem;
-            position: sticky;
-            top: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            margin: 0 10px;
-        }
-
-        nav a:hover {
-            color: var(--accent);
-        }
-
-        .container {
             max-width: 1000px;
-            margin: auto;
-            padding: 2rem;
+            margin: 0 auto;
         }
-
-        section {
-            margin-bottom: 3rem;
-            background: white;
-            padding: 1.5rem;
+        .persona-tarjeta {
+            background: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 0.5rem;
-            color: var(--primary);
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-
-        footer {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            padding: 20px;
             text-align: center;
-            padding: 2rem;
-            background: var(--primary);
-            color: white;
-            margin-top: 2rem;
+        }
+        .persona-tarjeta img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .persona-tarjeta h3 {
+            margin: 0 0 5px 0;
+            color: #222;
+            font-size: 18px;
+        }
+        .persona-tarjeta p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
         }
     </style>
-
-    <style>
-      .brush-text {
-      font-family: "Brush Script MT", cursive;
-    }
-   </style>
-
 </head>
 <body>
 
-<header>
-    <h1>Técnico Académico Titular "B", t.c.</h1>
-    <p class="brush-text">Leopoldo González</p>
-    <p>Matemáticas | Computación | Análisis de Datos</p>
-</header>
+    <h1>Integrantes del Grupo de Investigación "Mapeo Funcional"</h1>
 
-<nav>
-    <a href="#sobre-mi">Sobre Mí</a>
-    <a href="#articulos-publicados">Artículos Publicados</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<div class="container">
-
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>
-            Profesional con amplia trayectoria técnica, actualmente enfocado en la transición 
-hacia la **Ciencia de Datos** y la **Ingeniería de Machine Learning**. Mi enfoque combina la 
-precisión de la ingeniería con el análisis 
-            avanzado de sistemas complejos, como la neurobiología funcional y el desarrollo de 
-hardware automatizado.
-        </p>
-
-<h3> Escolaridad </h3>
-
-<ol>
-   <li><font color="green"> <b>Maestría en Ciencias de la Computación</b></font>, Centro de Investigación en Computación, 
-IPN, 1999.</li>
-   <li><font color="green"> <b>Licenciado en Física y Matemáticas</b></font>, Esc. Superior de Física y Matemáticas 
-del I.P.N, 1980.</li>
-</ol> 
-
-<h3> Cursos recibidos </h3>
-
-<ol>
-<li><font color="green"><b>AFNI Bootcamp</b></font>, Modalidad: Presencial, 35 hrs., UNAM, Campus Juriquilla, Querétaro, México, noviembre, 
-2024.</li> 
-
-<li><font color="green"><b>FSL</b></font>, Modalidad: Presencial, 40 hrs, University of British Columbia, Vancouver, Canadá, junio de 2017.</li>
-
-<li><font color="green"><b>XNAT, Workshop</b></font>, Modalidad: Presencial, 30 hrs., St Louis MO, País: Estados Unidos de América, junio de 
-2016.</li> 
-
-<li><font color="green"><b>Míneria de datos y Datawarehouse</b></font>, Modalidad: Presencial, 12 hrs., Facultad de Contaduría y Administración, 
-México, 
-marzo de 2007.</li>
-
-<li><font color="green"><b>Teórico - práctico de Microscopia</b></font>, Modalidad: Presencial, 10 hrs., Instituto de Neurobiología, México, abril de 2005.</li>
-
-<li><font color="green"><b>Resolución y Definición en el Procesamiento de Imagen Digital</b></font>, Modalidad: Presencial, 16 hrs., Alta Tecnología en laboratorios S.A., México, 
-octubre de 2001.</li>
-
-<li><font color="green"><b>Administración de sistemas de Videoconferencia</b></font>, Modalidad: Presencial, 24 hrs., DGSCA-VTEL Corporation, D.F. México., México, septiembre de 
-1997.</li>
-
-<li><font color="green"><b>Operator Training II Avanzado</b></font>, Modalidad: Presencial, 40 hrs., Tandem Computers Software Education, D.F., México, México, abril de 1992. 
-</li>
-
-<li><font color="green"><b>Gerencia Moderna</b></font>, Modalidad: Presencial, 40 hrs., Centro Educacional para el Norte de América Latina, D.F., México, México, febrero de 
-1992.</li>
-
-<li><font color="green"><b>Planeación de la Capacidad en Informática</b></font> , Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de 
-América Latina. D.F. México, octubre de 1991.</li>
-
-<li><font color="green"><b>Metodología de la Planeación Estratégica</b></font>, Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de 
-América Latina, D.F., México, septiembre de 1991.</li>
-
-<li><font color="green"><b>Lenguaje Ensamblador</b></font>, Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de América Latina, D.F., 
-México, País: México, marzo de 1990.</li>
-
-<li><font color="green"><b>Migración a MVS/XA 2.20</b></font>, Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de América 
-Latina, D.F. México., diciembre de 1989.</li>
-
-<li><font color="green"><b>CICS Determinación de Problemas</b></font>, Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de América Latina. 
-D.F. México, noviembre de 1989.</li>
-
-<li><font color="green"><b>MVS Determinación de Problemas</b></font> , Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de América Latina. 
-D.F. México, noviembre de 1989.</li>
-
-<li><font color="green"><b>VTAM Determinación de Problemas</b></font>, Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de América Latina, 
-D.F, México, octubre de 1989.</li>
-
-<li><font color="green"><b>JES2 Implantación</b></font>, Modalidad: Presencial, 40 hrs., IBM de México, S.A. Centro Educacional para el Norte de América Latina, D.F., México, 
-junio de 1988.</li>
-
-<li><font color="green"><b>Ambiente de Comunicación de Datos</b></font>, Modalidad: Presencial, h40 hrs., S.A. Centro Educacional para el Norte de América Latina, D.F., México, 
-marzo de 1988.</li>
-
-<li><font color="green"><b>TSO Utilización</b></font>, Modalidad: Presencial, 40 hrs., S.A. Centro Educacional para el Norte de América Latina, D.F., México, marzo de 1988.</li>
-</ol>
-
-   <section id="articulos-publicados">
-        <h2>Artículos Publicados</h2>
-
-<ol>
-<li>Romero-Meléndez, C., Castillo-Fernández, D., González-Santos, L, “Asymptotic Stability in a Controlled Stochastic Lotka-Volterra Model with Lévy Noise”, International Journal of Applied Physics
-and Mathematics, noviembre de 2025; 15(1), 1-12.</li>
-
-<li>Hevia-Orozco, J.C., Reyes-Aguilar, A., Hernández-Pérez, R., González-Santos, L., Pasay, E H.,
-Barrios, F.A., Personality Traits Induce Different Brain Patterns When Processing Social and Valence
-Information, Frontiers in Physiology, enero de 2022, 1-9.</li>
-
-<li>Romero-Meléndez, C. , Castillo-Fernández, D. and González-Santos, L., “On the Boundedness of
-the Numerical Solutions’ Mean Value in a Stochastic Lotka–Volterra Model and the Turnpike
-Property“, Hindaw Complexity, noviembre de 2021, 1-14.</li>
-
-<li>Romero-Meléndez, C., González-Santos, L., Castillo-Fernández, “A NUMERICAL APPROACH
-FOR THE STOCHASTIC CONTROL OF A TWO-LEVEL QUANTUM SYSTEM”, CYBERNETICS
-AND PHYSICS, agosto de 2020; 9(2), 107-116.</li>
-
-<li>Velásquez-Upegui, E.P., Tovar-González, J., González, L., “Hacia una caracterización prosódica
-de los actos del habla directivos: producción y percepción de mandatos”, Lengua y Habla, Revista
-del Centro de Investigación y Atención Lingüística C.I.A.L, agosto de 2020; 24, 1-5.</li>
-
-<li>Muley, V.Y., Lo_pez-Victorio, C.J., Ayala-Sumuano, J.T., Gonza_lez-Gallardo, A., Gonza_lez-
-Santos, L., Lozano-Flores, C., Wray, G., Herna_ndez-Rosales, M., Varela-Echavarri_a, A.,
-“Conserved and divergent expression dynamics during early patterning of the T telencephalon in
-mouse and chick embryos”, Progress In Neurobiology, enero de 2020; 186, 1-15.</li>
-
-<li>Martínez-Soto, J., De la Fuente Suárez, L.A., González-Santos, L., Barrios, F.A., “Observation of
-environments with different restorative potential results in differences in eye patron movements and
-pupillary size”, IBRO Reports, noviembre de 2019; 7, 52-58.</li>
-
-<li>Nanni, M., Martínez-Soto, J., González-Santos, L., Barrios, F.A., "Neural correlates of the natural
-observationof an emotionally loaded video", Plos One, noviembre de 2018, 1-19.</li>
-
-<li>Martinez J, Gonzalez-Santos L, Barrios F.A., AFFECTIVE AND RESTORATIVE VALENCES FOR
-THREE ENVIRONMENTAL CATEGORIES, Perceptual And Motor Skills, octubre de 2014, 1-10.</li>
-
-<li>Beatriz Moreno M., Concha L., González-Santos L., Ortiz J.J., Barrios F.A., , Correlation between
-Corpus Callosum Sub-Segmental Area and Cognitive Processes in School-Age Children, Plos One,
-agosto de 2014; 9(8), 1-10.</li>
-
-<li>Bauer C.C., Moreno B., Gonzalez-Santos L., Concha L., Barquera S., Barrios F.A., Child
-overweight and obesity are associated with reduced executive cognitive performance and brain
-alterations: a magnetic resonance imaging study in Mexican children, Pediatric Obesity, julio de 2014.</li>
-
-<li>Martínez-Soto J., González-Santos L., Pasaye E. and Barrios F.A., Exploration of neural
-Correlates of restorative environment exposure through functional magnetic resonance, Intelligent
-Buildings International, Taylor Francis Online, septiembre de 2013; 5(S1), 10-28.</li>
-
-<li>Gonzalez-Santos L, Mercadillo RE, Graff A, Barrios FA, "Versión computarizada para la
-aplicación del Listado de Síntomas 90 (SCL 90) y del Inventario de Temperamento y Carácter (ITC)",
-Salud Mental, julio de 2007; 30(4), 31-40.</li>
-
-<li>Barríos F.A., González L., Fávila R., Alonso M.E., Salgado P., Díaz R., Fenández, J., OLFACTION
-AND NEURODEGENERATION IN HD, Neuroreport, enero de 2007; 18(1), 73-76.</li>
-
-<li>Huerta-Ocampo I., Mena F., Barríos F.A., Martínez G., González L., Larriva-Sahd J.L., Perinatal
-Exposure to Androgen Suppresses Sexual Dimorphism in Nerve Trunk Diameter, Axon Number, and
-Fiber Size Spectrum: a Quantitative Ultrastructural Study of the Adult Rat Mammary Nerve., Brain
-Research, octubre de 2005; 1060(1-2), 179-183.</li>
-
-<li>George-Téllez R, Segura-Valdez ML, González-Santos L, Jiménez-García LF, "Cellular
-organization of pre-mRNA splicing factors in several tissues. Changes in the uterus by hormone
-action", Biology of the cell, mayo de 2002; 94(2), 99-108.</li>
-
-<li>González-Santos, L., Rojas-Jasso, R., Salgado, P., Ponte-Romero, R., Sánchez-Cortázar, J.,
-Barrios, F.A., "Segmentación semiautomática de imágenes por resonancia magnética cerebral por
-crecimiento de regiones con estimación robusta: una validación radiológica", Revista Mexicana De
-Radiologia, abril de 1999; 53(2), 51-54.</li>
-
-</ol>
-
-    </section>
-
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Análisis de Conectividad Funcional</h3>
-                <p>Procesamiento de datos de neuroimagen (fMRI/DTI) utilizando Python y 
-librerías especializadas como Nilearn.</p>
-            </div>
-            <div class="project-card">
-                <h3>Sistemas de Riego Automatizado</h3>
-                <p>Desarrollo de un sistema autónomo alimentado por energía solar integrado con 
-Home Assistant y ESP32.</p>
-            </div>
-            <div class="project-card">
-                <h3>Simulación Financiera</h3>
-                <p>Modelado de carteras de inversión mediante simulaciones de Monte Carlo y 
-análisis de riesgo (VaR).</p>
-            </div>
+    <div class="grupo-contenedor">
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Ana">
+            <h3>Fernano A. Barrios</h3>
+            <p>Líder de Proyecto</p>
         </div>
-    </section>
 
-    <section id="habilidades">
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li><strong>Lenguajes:</strong> Python, C++, R, COBOL, SQL.</li>
-            <li><strong>Data Science:</strong> Pandas, Scikit-Learn, Visualización de 
-Datos.</li>
-            <li><strong>Infraestructura:</strong> Linux (Ubuntu Server), Seguridad en Redes, 
-Docker.</li>
-            <li><strong>Hardware:</strong> Arduino, Raspberry Pi, Electrónica DIY.</li>
-        </ul>
-    </section>
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Carlos">
+            <h3>Sarael Alcauter</h3>
+            <p>Diseñador Web</p>
+        </div>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Interesado en colaborar o conocer más sobre mi trabajo?</p>
-        <p>Email: <a href="mailto:santosg572@gmail.com.com">santosg572@gmail.com.com</a></p>
-        <p>WhatsApp: 442-475-48-04</p>
-    </section>
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Elena">
+            <h3>Leopoldo González</h3>
+            <p>Técnico Académico Titular "B", t.c.</p>
+            <A HREF="./mipagina2/gonzalez-santos.html">AQUÍ</A>
+        </div>
+    </div>
 
-</div>
+<hr style="border: none; height: 3px; background-color: red;">
 
-<footer>
-    <p>&copy; 2026 - Portafolio Profesional Personal</p>
-</footer>
+<h2 style="text-align: center;">Alumnos desde 1995 hasta la fecha</h2>
 
+    <div class="grupo-contenedor">
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Ana">
+            <h3>Fís. Juan J. Ortiz Retana</h3>
+            <p>Espectroscopía y Huntington</p>
+        </div>
+            
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Carlos">
+            <h3>Martha Beatriz Moreno Garcìa</h3>
+            <p>Procesos cognitivos y Cuerpo Calloso</p>
+        </div>
+            
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Elena">
+            <h3>Margarita de Jesús Cipriano</h3>
+            <p>Imágenes por Difusión y Enfermedad de Parkinson</p>
+        </div>
+    </div>
+
+</br>
+
+    <div class="grupo-contenedor">
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Ana">
+            <h3>Ian</h3>
+            <p>Proyecto: Gemelos</p>
+        </div>
+        
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Carlos">
+            <h3>Sarael Alcauter</h3>
+            <p>Diseñador Web</p>
+        </div>
+            
+        <div class="persona-tarjeta">
+            <img src="https://placeholder.com" alt="Foto de Elena">
+            <h3>Leopoldo González</h3>
+            <p>Técnico Académico Titular "B", t.c.</p>
+        </div>
+    </div>
 </body>
 </html>
 
